@@ -14,10 +14,8 @@ bottoneLista.addEventListener('click',
  function() {
 
   cognomeUtente = document.getElementById('tuocognome').value;
-  console.log("è: " + cognomeUtente);
 
   cognomi.push(cognomeUtente);
-  console.log(cognomi);
 
   var i = 0;
   while (i < cognomi.length) {
@@ -29,10 +27,11 @@ bottoneLista.addEventListener('click',
     i++;
   }
 
-  // cognomi.sort();
-
+  // stampare lista ordinata e posizione in essa
   document.getElementById('lista').innerHTML = testoDaStampare;
 
-} );
+  var posizioneNellaLista = cognomi.indexOf(cognomeUtente);
 
-// ordinare in ordine alfabetico i cognomi
+  document.getElementById('posizione').innerHTML = "Sei nella posizione numero: " + ++posizioneNellaLista;
+
+} );
