@@ -15,8 +15,17 @@ body{
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #F87217;
-  color: #fff;
+  background-color: #C8B560;
+}
+
+/* rogole input */
+.container #tuocognome{
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: solid #000;
+  margin: 20px 0;
 }
 
 /* regole bottone */
@@ -26,11 +35,24 @@ body{
   background-color: #fff;
   border-radius: 10px;
   border: solid #000;
+  margin: 20px 0;
 }
 
 .container #bottone:hover{
   transform: scale(1.1);
   cursor: pointer;
+}
+
+/* regole lista */
+.container #lista{
+  font-size: 20px;
+  padding: 10px 20px;
+  list-style-type: none;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  border: solid #000;
+  margin: 20px 0;
 }
 
 /* regole risultato */
